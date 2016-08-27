@@ -1,0 +1,371 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<head>
+<title>San Fernando Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/global.css">
+<script src="js/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		<div class="headertop_desc">
+			<div class="call">
+				<p><span>Necesita ayuda?</span> LLamar <span class="number">+569-99675432</span></span></p>
+			</div>
+			<div class="account_desc">
+				<ul>
+				<li><a href="#">Registrarse</a></li>
+					<li><a href="#">Ingresar</a></li>
+					<li><a href="#">Entregas</a></li>
+					<li><a href="#">Mi cuenta</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo4.png" alt="" /></a>
+			</div>
+			  <div class="cart">
+			  	     <p>Bienvenido a San Fernando Store! <span>Tarjeta:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	   	<ul class="dropdown">
+							<li>no tienes item en tu tarjeta</li>
+					</ul></div></p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    	<li class="active"><a href="index.html">Inicio</a></li>
+			    	<li><a href="about.html">Acerca de Nosotros</a></li>
+			    	<li><a href="delivery.html">Tecnologia</a></li>
+			    	<li><a href="news.html">Ofertas</a></li>
+			    	<li><a href="contact.html">Contacto</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    	<div class="content_top">
+    		<div class="back-links">
+    		<p><a href="index.html">Inicio</a> >>>> <a href="#">Notebooks</a></p>
+    	    </div>
+    		<div class="clear"></div>
+    	</div>
+    	<div class="section group">
+				<div class="cont-desc span_1_of_2">
+				  <div class="product-details">				
+					<div class="grid images_3_of_2">
+						<div id="container">
+						   <div id="products_example">
+							   <div id="products">
+								<div class="slides_container">
+									<a href="#" target="_blank"><img src="images/notebooks/acer_celeron_2gb1.jpg" alt=" " /></a>
+								</div>
+								<ul class="pagination">
+									<li><a href="#"><img src="images/notebooks/acer_celeron_2gb1.jpg" alt=" " /></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc span_3_of_2">
+					<h2>Notebook Acer 11.6" Intel Celeron, 2GB RAM, 32GB DD</h2>
+					<p>Diseño clasico, colores expresivos </p>					
+					<div class="price">
+						<p>Precio: <span>$149.990</span></p>
+					</div>
+					<div class="available">
+						<p>Opciones  Disponibles:</p>
+					<ul>
+						<li>Color:
+							<select>
+							<option>Blanco</option>
+							<option>Azul</option>
+						</select></li>
+						<li>Cantidad:<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select></li>
+					</ul>
+					</div>
+				<div class="share-desc">
+					<div class="share">
+						<p>Compartir Producto :</p>
+						<ul>
+					    	<li><a href="#"><img src="images/facebook.png" alt="" /></a></li>
+					    	<li><a href="#"><img src="images/twitter.png" alt="" /></a></li>					    
+			    		</ul>
+					</div>
+					<div class="button"><span><a href="#">Agregar Al Carro</a></span></div>					
+					<div class="clear"></div>
+				</div>
+				 <div class="wish-list">
+				 	<ul>
+				 	
+				 	</ul>
+				 </div>
+			</div>
+			<div class="clear"></div>
+		  </div>
+		<div class="product_desc">	
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li>Descripcion</li>
+					<li>Ficha Tecnica</li>
+				
+					<div class="clear"></div>
+				</ul>
+				<div class="resp-tabs-container">
+					<div class="product-desc">
+						<p>
+                            Para trabajar en la nube, lo que realmente necesitas es velocidad. Por eso, nuestro Cloudbook dispone de las últimas
+                            conexiones de red inalámbricas que admiten altas velocidades de conexión nunca vistas. Acelera su proceso de
+                            almacenamiento en la nube, incorpora dinamismo a las aplicaciones ofreciendo una navegación de una rapidez sin igual. 
+                           </p>
+
+</p>					</div>
+
+				 <div class="product-tags">
+						 <p>Características:</span><br/>Marca: Acer<br/>Modelo AO1-131-C3AL <br/>Sistema Operativo: Windows 10 Home<br/>Procesador: Intel® Celeron® N3050 1.6 GHz (2M Cache, up to 2.16 GHz) Dual Core (2 Nucleos)<br/>Memoria RAM: 2GB<br/>Memoria Interna: 32GB<br/>Tarjeta Gráfica: &nbsp;Intel® HD Graphics Compartido<br/>Lector Optico: No<br/>Pantalla: LCD Color TFT de matris activa, Acer Comfy View<br/>Tamaño Pantalla: 11,6”<br/>Resolución: 1366 x 768 HD 16:9<br/>Web Cam: Si<br/>Conectividad inalámbrica: Wifi INT3160NGW AC w/Bluetooth 4.0<br/>Bateria: Litio Polímero (Li-Polímero) 4350 mAh<br/><br/><span style='font-weight:bold;'>Puertos:</span><br/>USB 2.0: 1<br/>USB 3.0: 1<br/>HDMI: Si<br/>Audio Jack: Si<br/>Kensington Lock Slot: Si<br/><br/><span style='font-weight:bold;'>Dimensiones:</span><br/>Altura Anterior/Posterior 8,40 mm / 17,9 mm<br/>Ancho: 292 mm<br/>Profundidad: 202 mm<br/>Peso Aprox: 1,15 kg<br/><br/><span style='font-weight:bold;'>Informacion Adicional</span><br/><br/>Microfono: Si<br/>Teclado Spanish - ACLA<br/>Software Adicional McAfee® Internet Security Suite Trial<br/><br/><br/><br/><br/></p>
+				
+					
+			    </div>	
+
+			
+			</div>
+		 </div>
+	 </div>
+	    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+   </script>		
+   <div class="content_bottom">
+    		<div class="heading">
+    		<h3>Productos Recientes </h3>
+    		</div>
+    	
+    		<div class="clear"></div>
+    	</div>
+   <div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="consolas_nintendo3ds.html"><img src="images/consolas/nintendo3ds.png" alt=""></a>					
+					<div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="consolas_nintendo3ds.html">Descripcion</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview_hp_i5.html"><img src="images/notebooks/hp_i5_1.jpg" alt=""></a>
+					 <div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="preview_hp_i5.html">Descripcion</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="hogar_lucuadoraoster.html"><img src="images/hogar/licuadoraoster.png" alt=""></a>
+					<div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="hogar_lucuadoraoster.html">Descripcion</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+				 <img src="images/consolas/xboxone.png" alt="">
+					 <div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="consolas_xboxone.html">Descripcion</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+			</div>
+        </div>
+				<div class="rightsidebar span_3_of_1">
+					<h2>CATEGORIAS</h2>
+					<ul>
+				   <li><a href="categoria_celulares.html">Telefonos Moviles</a></li>
+                   <li><a href="categoria_notebooks.html">Notebook & PC</a></li>
+                   <li><a href="categoria_videojuegos.html">Consolas</a></li>
+                   <li><a href="categoria_hogar.html">Electro Hogar</a></li>
+    				</ul>
+    			
+      				 <div class="community-poll">
+      				 	<h2>Encuesta</h2>
+      				 	<p>Cual es la razon por la que compras online?</p>
+      				 	<div class="poll">
+      				 		<form>
+      				 			<ul>
+									<li>
+									<input type="radio" name="vote" class="radio" value="1">
+									<span class="label"><label>Mas conveniente </label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="2">
+									<span class="label"><label for="vote_2">Precios Bajos</label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="3">
+									<span class="label"><label for="vote_3">Mas Facil elegir</label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="5">
+									<span class="label"><label for="vote_5">Seguro para pagar </label></span>
+									</li>
+							
+									<li>
+									<input type="radio" name="vote" class="radio" value="7">
+									<span class="label"><label for="vote_7">Otro.</label></span>
+									</li>
+									</ul>
+      				 		</form>
+      				 	</div>
+      				 </div>
+ 				</div>
+ 		</div>
+ 	</div>
+    </div>
+ </div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>Informacion</h4>
+						<ul>
+						<li><a href="about.html">Acerca</a></li>
+						<li><a href="contact.html">Servicio al Cliente</a></li>
+						<li><a href="#">Busqueda Ananzada</a></li>
+						<!--<li><a href="delivery.html">Orders and Returns</a></li>-->
+						<li><a href="contact.html">Contacto</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Como Comprar con nosotros</h4>
+						<ul>
+						<li><a href="about.html">Acerca</a></li>
+						<li><a href="contact.html">Servicios</a></li>
+						<li><a href="#">Politica de Privacidad</a></li>
+					<!--<li><a href="delivery.html">Orders and Returns</a></li>-->
+						<li><a href="#">Buscar Terminos</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Mi Cuenta</h4>
+						<ul>
+							<li><a href="contact.html">Registrarse</a></li>
+							<li><a href="index.html">Ver Tarjeta</a></li>
+					        <li><a href="#">Ver mis ordenes</a></li>
+							<li><a href="contact.html">Ayuda</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Contact0</h4>
+						<ul>
+							<li><span>+569-99675432</span></li>
+							<li><span>+569-99675435</span></li>
+						</ul>
+						<div class="social-icons">
+							<h4>Siguenos en:</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+				<p>Compañia San fernando Store  © All rights Reseverd | Design by  <a href="#">Ingenieria Informatica AIEP 2016</a> </p>
+		   </div>
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+</body>
+</html>
+
