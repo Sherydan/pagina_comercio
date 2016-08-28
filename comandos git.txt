@@ -5,7 +5,7 @@ git commit -m 'razon del comit' = tomar "foto" al proyecto (localmente)
 git push origin master = subir el ultimo commit a github (a la rama master)
 git pull origin master = bajar el repo con el ultimo commit (a la rama master)
 git branch nombre = crear una nueva rama
-gir checkout nombre = cambiarse a esa rama 
+git checkout nombre = cambiarse a esa rama 
 git clone "url" = baja repo seleccionado
 git remote show origin = saber en que repositorio estoy trabajando
 
