@@ -8,4 +8,5 @@ git branch nombre = crear una nueva rama
 git checkout nombre = cambiarse a esa rama 
 git clone "url" = baja repo seleccionado
 git remote show origin = saber en que repositorio estoy trabajando
+probando
 
