@@ -17,6 +17,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all"/>
 <link rel="stylesheet" href="css/global.css">
 <script src="js/slides.min.jquery.js"></script>
+<!-- Scripy prueba de carrito -->
+<script type="text/javascript" src="js/simpleCart.js"></script>
+<script>
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "you@yours.com" 
+			}
+		});	
+	</script>
 <script>
 		$(function(){
 			$('#products').slides({
@@ -54,7 +64,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="index.html"><img src="images/logo4.png" alt="" /></a>
 			</div>
 			  <div class="cart">
-			  	     <p>Bienvenido a San Fernando Store! <span>Tarjeta:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+
+			  	     <p>Bienvenido a San Fernando Store! <span>Tarjeta:</span><div id="dd" class="wrapper-dropdown-2">  <span class="simpleCart_quantity"></span> item(s) - <div class="simpleCart_total"></div>
+
 			  	   	<ul class="dropdown">
 							<li>no tienes item en tu tarjeta</li>
 					</ul></div></p>
@@ -138,10 +150,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				<div class="desc span_3_of_2">
-					<h2>Celular Samsung J7 </h2>
+				<div class="simpleCart_shelfitem">
+					<h2 class="item_name">Celular Samsung J7 </h2>
+					<a href="javascript:;" class="simpleCart_empty">empty cart</a>
 					<p>Todo lo que le pides a un smartphone vas a encontrarlo en el nuevo Galaxy J7. </p>					
 					<div class="price">
-						<p>Precio: <span>$249.990</span></p>
+						<p>Precio: <span class="item_price">$249.990</span></p>
 					</div>
 					<div class="available">
 						<p>Opciones  Disponibles:</p>
@@ -160,6 +174,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<option>5</option>
 						</select></li>
 					</ul>
+
+				</div>
+					
 					</div>
 				<div class="share-desc">
 					<div class="share">
@@ -169,7 +186,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    	<li><a href="#"><img src="images/twitter.png" alt="" /></a></li>					    
 			    		</ul>
 					</div>
-					<div class="button"><span><a href="#">Agregar Al Carro</a></span></div>					
+					<div class="button"><span><a href="javascript:;" onclick="simpleCart.add({name:'samsung j 7', price: 249.990,size:'tiny',thumb:'images/celulares/samsung_j7_4.jpg'});">Agregar Al Carro</a></span></div>
+					<a href="javascript:;" class="simpleCart_checkout"> comprar</a>	
+
 					<div class="clear"></div>
 				</div>
 				 <div class="wish-list">
@@ -191,6 +210,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="resp-tabs-container">
 					<div class="product-desc">
 						<p>El Samsung Galaxy J7 es el smartphone más potente de la serie Galaxy J, con un procesador octa-core Snapdragon 615. Posee una pantalla HD de 5.5 pulgadas, cámara de 13 MP en la parte posterior, cámara frontal de 5 MP con flash LED, 16GB de almacenamiento interno, 1.5GB de RAM y batería de 3000 mAh.
+
+						<li>
+							
+							<div class="simpleCart_items"></div>
+						</li>
 
 </p>					</div>
 
