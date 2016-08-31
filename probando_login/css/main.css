@@ -41,3 +41,9 @@ body {
 .form-signin .btn, .form-signup .btn  {
   margin-bottom: 10px;
 }
+
+.mensajerror{
+  display: none;
+
+  color:red;
+}
