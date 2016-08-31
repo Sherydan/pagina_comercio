@@ -36,6 +36,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	background: #FFF;
 }
+
+.cart .simpleCart_items table tr th{
+    padding: 8px;
+}
 .wrap {
 	width:80%;
 	margin: 0 auto;
@@ -1595,4 +1599,6 @@ body {
 	.contact-form input[type="text"],.contact-form textarea{
 		width:93%;
 	}
+
+
 }
