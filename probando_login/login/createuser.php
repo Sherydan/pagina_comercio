@@ -50,6 +50,8 @@ elseif ( ($_POST['newuser']!= "") && ($_POST['password1']!= "")  )
         $response = $a->createUser($newuser, $newid, $newemail, $newpw);
 
    echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'. $signupthanks .'</div><div id="returnVal" style="display:none;">true</div>';
+
+
     }
 
 ?>

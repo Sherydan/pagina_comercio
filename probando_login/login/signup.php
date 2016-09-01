@@ -27,19 +27,20 @@
 
       <form class="form-signup" id="usersignup" name="usersignup" method="post" action="createuser.php">
         <h2 class="form-signup-heading">Registro de Cliente</h2>
-        <input name="newuser" id="newuser" type="text" class="form-control" placeholder="Usuario" autofocus>
-
-     <br><div id="mensaje1" class="mensajerror"> Dame tu nombre</div>
-
+        <input name="newuser" id="newuser" type="text" class="form-control" placeholder="Nombre" autofocus>
+        <h5> <div id="mensaje1" class="mensajerror"> Escribe tu nombre</div></h5>
         <input name="email" id="email" type="text" class="form-control" placeholder="Email">
-     <div id="mensaje2" class="mensajerror">Correo</div>
+          <h5> <div id="mensaje2" class="mensajerror">Ingresa un correo valido</div></h5>
         <input name="password1" id="password1" type="password" class="form-control" placeholder="Clave">
-      <div id="mensaje3" class="mensajerror">Clave ahhaahha</div>
+      <h5> <div id="mensaje3" class="mensajerror">Escribe una clave </div></h5>
         <input name="password2" id="password2" type="password" class="form-control" placeholder="Repetir clave">
-<div id="mensaje4" class="mensajerror">Clave 2 ahhaahha</div>
+             <h5> <div id="mensaje4" class="mensajerror">Repite tu clave</div></h5>
         <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+       <!-- <a style="color:#FFFFFF" href="main_login.php"> hola</a>-->
+       
      <br>
-        <div id="message"></div>
+        <div id="message" ></div>
+   <a href="main_login.php"><img id="btnoculto" src="images/ingresar.png"></a> 
       </form>
 
     </div> <!-- /container -->
@@ -72,9 +73,14 @@ $( "#usersignup" ).validate({
     }
   }
 });
+
 </script>
 
 <script type="application/javascript">
+
+ function retardo() {
+    $("#btnoculto").fadeIn();
+ }
 var expr = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
  //var expr = /^[a-zA-Z0-9_\.\-]+\@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
@@ -125,8 +131,17 @@ if (nombre == "")
 
   return false;
 
-      }else{
+      } else if(clave==clavedos){
         $("#mensaje4").fadeOut();
+         $("#submit").fadeOut();
+          document.getElementById("newuser").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("password1").value = "";
+          document.getElementById("password2").value = "";
+       setTimeout(retardo, 3000);
+     }else{
+
+  $("#mensaje4").fadeIn();
       }
     }
   }
@@ -134,6 +149,8 @@ if (nombre == "")
 
   });
     });
+
+
 </script>
 
   </body>

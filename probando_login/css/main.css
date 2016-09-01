@@ -47,3 +47,15 @@ body {
 
   color:red;
 }
+#btnoculto{
+  display: none;
+
+
+}
+#submit{
+  display: block;
+}
+#ingresar{
+text-decoration-color:#FFFFFF;
+color: :#FFFFFF
+}
