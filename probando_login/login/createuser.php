@@ -9,6 +9,17 @@ $newpw = $_POST['password1'];
 $pw1 = $_POST['password1'];
 $pw2 = $_POST['password2'];
 
+//$newciudad = $_POST['ciudad'];
+//$newrut = $_GET['rut'];
+//$newtelefono = $_GET['telefono'];
+
+$newciudad =  $_POST['ciudad'];
+$newrut = $_POST['rut'];
+$newtelefono = $_POST['telefono'];
+    //Enabl
+
+    //Enabl
+
     //Enables moderator verification (overrides user self-verification emails)
 if (isset($admin_email)) {
 
@@ -47,7 +58,7 @@ elseif ( ($_POST['newuser']!= "") && ($_POST['password1']!= "")  )
 
         $a = new NewUserForm;
 
-        $response = $a->createUser($newuser, $newid, $newemail, $newpw);
+        $response = $a->createUser($newuser, $newid, $newemail, $newpw, $newciudad, $newrut, $newtelefono);
 
    echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'. $signupthanks .'</div><div id="returnVal" style="display:none;">true</div>';
 

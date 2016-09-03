@@ -4,6 +4,23 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php
+
+session_start();
+if(!isset($_SESSION['user'])){
+ // header("location:index.php");
+
+
+	  $_SESSION['user'] = ''; 
+
+}
+
+
+
+
+?>
+
+
 <!DOCTYPE HTML>
 <head>
 <title>San Fernando Store</title>
@@ -38,7 +55,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="index.html"><img src="images/logo4.png" alt="" /></a>
 			</div>
 			  <div class="cart">
-			  	   <p>Bienvenido a San Fernando Store! <span>Tarjeta:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	     <p>Bienvenido a San Fernando Store!  <span>Tarjeta:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	   <p><span>Usuario:</span><?php echo ''.$_SESSION["user"].''?><span>
 			  	   	<ul class="dropdown">
 							<li>no tienes item en tu tarjeta</li>
 					</ul></div></p>
@@ -96,10 +114,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="categories">
 				  <ul>
 				   <h3>Categorias</h3>
-				      <li><a href="categoria_celulares.html">Telefonos Moviles</a></li>
+				      <li><a href="#">Telefonos Moviles</a></li>
 				      <li><a href="categoria_notebooks.html">Notebook & PC</a></li>
 				      <li><a href="categoria_videojuegos.html">Consolas</a></li>
-				      <li><a href="categoria_hogar.html">Electro Hogar</a></li>
+				        <li><a href="categoria_hogar.html">Electro Hogar</a></li>
 				 
 				    <!--   <li><a href="#">Footwear</a></li>
 				       <li><a href="#">Jewellery</a></li>
@@ -168,17 +186,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Nuevos Productos</h3>
+    		<h3>Nuevos Smartphones</h3>
     		</div>
     		<div class="see">
-    			<p><a href="#">Ver todos los productos</a></p>
+    			<p><a href="#">Smartphone</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
 	      <div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
 					 <a href="preview_cel_samsung_j7.html"><img src="images/celulares/samsung_j7_1.jpg" alt="" /></a>
-					 <h2>Celular Samsung J7</h2>
+					 <h2>Celular Samsung J7 64GB</h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">$249.990</span></p>
@@ -191,22 +209,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview_asus_X456UB.html"><img src="images/notebooks/asus_X456UB_1.jpg" alt="" /></a>
-					 <h2>Notebook ASUS X456UB</h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$529.990</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview_asus_X456UB.html">Descripción</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				    
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
 					<a href="preview_iphone.html"><img src="images/celulares/iphone.png" alt="" /></a>
-					 <h2>APPLE IPHONE 6S PLUS </h2>
+					 <h2>APPLE IPHONE 6S PLUS 64GB</h2>
 					<div class="price-details">
 				       <div class="price-number">
 							<p><span class="rupees">$799.990</span></p>
@@ -219,14 +223,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview_led_lg.html"><img src="images/tv/led_lg_1.jpg" alt="" /></a>
-					 <h2>LED LG 49" LH5100</h2>
-					<div class="price-details">
+					<a href="preview_mototercera.html"><img src="images/celulares/motogter.png" alt="" /></a>
+					 <h2>Moto G Tercera generacion Smart </h2>
+					 <div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$299.990</span></p>
+							<p><span class="rupees">169.990</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview_led_lg.html">Descripción</a></h4>
+									<h4><a href="preview_mototercera.html">Descripción</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview_huawei.html"><img src="images/celulares/huawei.png" alt="" /></a>
+					 <h2>HUAWEI SMARTPHONE P8 LITE NEGRO</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">$149.990</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview_huawei.html">Descripción</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>				     
@@ -234,7 +251,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3> Productos Populares</h3>
+    		<h3>Economicos</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">Ver todos los productos</a></p>
@@ -243,53 +260,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	</div>
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="consolas_psvita.html"><img src="images/consolas/psvita.png" alt="" /></a>
-					 <h2>SONY CONSOLA PS VITA + GOW COLLECTION</h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">160.000</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="consolas_psvita.html">Descripción</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-					<div class="grid_1_of_4 images_1_of_4">
-					<a href="consolas_xbox360.html"><img src="images/consolas/xbox360.png" alt="" /></a>
-					 <h2>MICROSOFT CONSOLA XBOX 360 500GB + KINECT</h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$180.000</span></p>      
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="consolas_xbox360.html">Descripción</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="consolas_nintendowiu.html"><img src="images/consolas/wiu.png" alt="" /></a>
-					 <h2>NINTENDO CONSOLA WII U DELUXE SET  </h2>
+					 <a href="preview_arcatel.html"><img src="images/celulares/arcatel.png" alt="" /></a>					
+					 <h2>ALCATEL SMARTPHONE PIXI 4 3.5 NEGRO</h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$299.000</span></p>
+							<p><span class="rupees">$29.990</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="consolas_nintendowiu.html">Descripción</a></h4>
+									<h4><a href="preview_arcatel.html">Descripción</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="consolas_mortalkombat.html"><img src="images/consolas/mortal.png" alt="" /></a>
-					 <h2>WARNER BROS MORTAL KOMBAT X PS4 - US</h2>					 
+					<a href="preview_lenovo.html"><img src="images/celulares/lenovo.png" alt="" /></a>
+					 <h2>LENOVO SMARTPHONE A2010 NEGRO PW/h2>
 					 <div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$44.000</span></p>
+							<p><span class="rupees">$109.990<</span></p>      
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="consolas_mortalkombat.html">Descripción</a></h4>
+									<h4><a href="preview_lenovo.html">Descripción</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview_motog.html"><img src="images/celulares/motog.png" alt="" /></a>
+					 <h2>MOTOROLA SMARTPHONE MOTO G 3ERA GENERACIÓN </h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">$129.000</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview_motog.html">Descripción</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+				 <a href="preview_lg.html.html"><img src="images/celulares/lg.png" alt="" /></a>
+					 <h2>LG SMARTPHONE G4 STYLUS DORADO</h2>					 
+					 <div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">$149.000</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview_lg.html">Descripción</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>

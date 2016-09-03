@@ -29,12 +29,25 @@
         <h2 class="form-signup-heading">Registro de Cliente</h2>
         <input name="newuser" id="newuser" type="text" class="form-control" placeholder="Nombre" autofocus>
         <h5> <div id="mensaje1" class="mensajerror"> Escribe tu nombre</div></h5>
+
         <input name="email" id="email" type="text" class="form-control" placeholder="Email">
           <h5> <div id="mensaje2" class="mensajerror">Ingresa un correo valido</div></h5>
+
         <input name="password1" id="password1" type="password" class="form-control" placeholder="Clave">
-      <h5> <div id="mensaje3" class="mensajerror">Escribe una clave </div></h5>
+        <h5> <div id="mensaje3" class="mensajerror">Escribe una clave </div></h5>
+
         <input name="password2" id="password2" type="password" class="form-control" placeholder="Repetir clave">
-             <h5> <div id="mensaje4" class="mensajerror">Repite tu clave</div></h5>
+        <h5> <div id="mensaje4" class="mensajerror">Repite tu clave</div></h5>
+
+        <input name="ciudad" id="ciudad" type="text" class="form-control" placeholder="Ciudad">
+        <h5> <div id="mensaje5" class="mensajerror">Ingresa  Cuidad</div></h5>
+
+        <input name="rut" id="rut" type="text" class="form-control" placeholder="RUT">
+        <h5> <div id="mensaje6" class="mensajerror">Ingresa tu  rut</div></h5>
+
+        <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Telefono">
+        <h5> <div id="mensaje7" class="mensajerror">Ingresa tu  Telefono</div></h5>
+
         <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
        <!-- <a style="color:#FFFFFF" href="main_login.php"> hola</a>-->
        
@@ -55,7 +68,7 @@
 
    <!-- <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>  -->
-<script>
+<!--<script>
 
 $( "#usersignup" ).validate({
 
@@ -74,9 +87,9 @@ $( "#usersignup" ).validate({
   }
 });
 
-</script>
+</script>-->
 
-<script type="application/javascript">
+<!--<script type="application/javascript">
 
  function retardo() {
     $("#btnoculto").fadeIn();
@@ -152,6 +165,6 @@ if (nombre == "")
 
 
 </script>
-
+-->
   </body>
 </html>
